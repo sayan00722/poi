@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="question-container">
+    <h2>আপনি গে?(are u gay?)</h2>
+    <button id="yes-button" onclick="showRandomMessage()">Yes</button>
+    <button id="no-button" onmouseover="teleportNoButton()" onclick="teleportNoButton()">No</button>
+</div>
+
+<div id="message-box">
+    <p id="popup-message"><h1>আপনি একটা বিশাল গে মানুষ ! </h1></p>
+    <img id="popup-image" src="aab.jpg" alt="Fancy Image">
+    <button id="quit-button" onclick="resetProgram()">Quit</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

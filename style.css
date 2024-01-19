@@ -1,0 +1,102 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#question-container {
+    text-align: center;
+}
+
+#yes-button, #no-button {
+    font-size: 24px;
+    padding: 16px 32px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#yes-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#no-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#message-box {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+}
+
+#message-box.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#popup-message {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+#popup-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+
+#quit-button {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 20px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    #question-container {
+        font-size: 40px !important;
+    }
+
+    #yes-button, #no-button {
+        font-size: 18px !important;
+        padding: 12px 24px !important;
+    }
+
+    #message-box {
+        font-size: 18px !important;
+    }
+
+    #quit-button {
+        font-size: 18px !important;
+        padding: 12px 20px !important;
+    }
+
+    #no-button {
+        touch-action: manipulation;
+    }
+}
